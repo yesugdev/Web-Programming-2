@@ -1,0 +1,41 @@
+.grid{
+margin: right;
+width: 50%;
+border: 3px solid white;
+padding: 10px;
+background-color: black;
+opacity: 0.8;
+}
+.yesug-new{
+
+}
+.sub1{
+  color:rgb(48,102,190);
+  font-size: 20px;
+}
+.sub2{
+  color:rgb(17,157,164);
+}
+.sub3{
+  color:rgb(109,157,197);
+}
+.sub4{
+  color:rgb(128,222,217);
+}
+.sub5{
+  color:rgb(174,1236,239);
+}
+
+body{
+  background-image: url(jk.jpeg);
+  column-rule-color:
+}
+h1{
+  color: white;
+}
+p{
+  color: white;
+  white-space: pre-line;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}

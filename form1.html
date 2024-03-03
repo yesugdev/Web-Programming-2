@@ -3,12 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Нэвтрэх Form</title>
+<title>Бүртгүүлэх</title>
 <style>
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
   padding: 20px;
 }
 
@@ -35,7 +34,7 @@ legend {
   text-align: center;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
   width: calc(100% - 22px);
   padding: 10px;
   margin-bottom: 10px;
@@ -57,6 +56,10 @@ input[type=submit]:hover {
   background-color: #5e379d;
 }
 
+p {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
 a {
   color: blueviolet;
   text-decoration: none;
@@ -69,21 +72,33 @@ a:hover {
 </style>
 </head>
 <body>
-<form action="index.html" method="post">
+<form action="form.html" method="post">
 <fieldset>
 
-<legend>Нэвтрэх хэсэг</legend>
-<h1> Нэвтрэх </h1>
+<legend>Бүртгүүлэх хэсэг</legend>
+<h1> Бүртгүүлэх </h1>
+<div>
+  <label for="ovog">Овог</label>
+  <input type="text" id="ovog" name="ovog">
+</div>
 <div>
   <label for="uname">Нэр</label>
   <input type="text" id="uname" name="uname">
 </div>
 <div>
-  <label for="upass">Нууц үг</label>
-  <input type="password" id="upass" name="upass">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email">
 </div>
 <div>
-  <a href="form1.html">Бүртгүүлэх</a>
+  <label for="pass">Нууц үг</label>
+  <input type="password" id="pass" name="pass">
+</div>
+<div>
+  <label for="cpass">Нууц үг давтах</label>
+  <input type="password" id="cpass" name="cpass">
+</div>
+<div>
+  <a href="forms.html">Нэвтрэх</a>
 </div>
 <input type="submit" value="Submit">
 

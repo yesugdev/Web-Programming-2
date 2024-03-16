@@ -21,11 +21,23 @@
         a {
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
+          transition: transform .2s;
+          color: black;
+        }
+        a:hover{
+        	transform: scale(1.2);
+        	text-decoration: underline;
         }
         nav img {
             max-width: 100px;
             height: auto;
             padding-right: 80px;
+
+        }
+        img:hover{
+
+transform: scale(1.2);
         }
         .container {
             background-color: #f4f4f4;
@@ -45,8 +57,9 @@
             float: right;
             margin-right: 20px; 
             margin-bottom: 20px;
-
+		transition: transform .2s;
         }
+
         .container p{
         	font-family: sans-serif;
         	font-size: 14px;
@@ -61,20 +74,26 @@
         	padding-right: 50px; 
 
         }
-  .gallery {
+        .container1{
+        	 background-color: #f4f4f4;
+            padding-right: 20px;
+            padding-left:20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-radius: 10px;
   display: flex;
-  
+  align-items: center;
   justify-content: center;
-}
+  gap: 10px;
 
-.gallery-item {
-  margin: 10px;
-}
-
-.gallery-item img {
-  width: auto; 
-  height: auto; 
-}
+        }
+        .container1 img{
+        	transition: transform .2s;
+        }
+ 
      
     </style>
 </head>
@@ -95,24 +114,16 @@
       худалдааны төвийн уулзвар орчимд гарсан аймшигт галыг нийтээрээ хэлэлцэж, 
   чих тавьж байжээ. Өнөөдөр харин энэ сэдвийг сөхөж буй хүн бараг үгүй болж.</p>
 
- <div class="gallery">
-  <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/400x400?image=1" alt="Зураг 1">
-  </div>
-  <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/400x400?image=2" alt="Зураг 2">
-  </div>
- <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/400x400?image=3" alt="Зураг 3">
-  </div>
-   <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/400x400?image=4" alt="Зураг 4">
-  </div>
-   <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/400x400?image=4" alt="Зураг 5">
-  </div>
-</div>
+
     </div>
+     <div class="container1">
+   <img src="https://source.unsplash.com/random/250x300?image=1" alt="Зураг 1">
+ <img src="https://source.unsplash.com/random/250x300?image=2" alt="Зураг 2">
+<img src="https://source.unsplash.com/random/250x300?image=3" alt="Зураг 3">
+<img src="https://source.unsplash.com/random/250x300?image=4" alt="Зураг 4">
+
+     </div>
+
 
 </body>
 </html>

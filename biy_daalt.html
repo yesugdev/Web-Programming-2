@@ -4,26 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Зургийн Галерей</title>
+<style type="text/css">
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px; 
+    margin: auto;
+  }
+
+  .gallery-item {
+    margin: 10px;
+    width: calc(33.333% - 20px); 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.08); 
+  }
+
+  @media (max-width: 768px) {
+    .gallery-item {
+      width: calc(50% - 20px); 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-item {
+      width: calc(100% - 20px); 
+    }
+  }
+</style>
 </head>
 <body>
-	<style type="text/css">
-		
-	.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-item {
-  margin: 10px;
-}
-
-.gallery-item img {
-  width: auto; 
-  height: auto; 
-}
-
-	</style>
 <div class="gallery">
   <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=1" alt="Зураг 1">
@@ -31,15 +70,38 @@
   <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=2" alt="Зураг 2">
   </div>
- <div class="gallery-item">
+  <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=3" alt="Зураг 3">
   </div>
-   <div class="gallery-item">
+  <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=4" alt="Зураг 4">
   </div>
-   <div class="gallery-item">
-    <img src="https://source.unsplash.com/random/800x800?image=4" alt="Зураг 5">
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=5" alt="Зураг 5">
   </div>
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=6" alt="Зураг 6">
+  </div>
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=7" alt="Зураг 7">
+  </div>
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=8" alt="Зураг 8">
+  </div>
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=9" alt="Зураг 9">
+  </div>
+  <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=10" alt="Зураг 10">
+  </div>
+   <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=11" alt="Зураг 11">
+  </div>
+
+ <div class="gallery-item">
+    <img src="https://source.unsplash.com/random/800x800?image=12" alt="Зураг 12">
+  </div>
+
 </div>
 </body>
 </html>

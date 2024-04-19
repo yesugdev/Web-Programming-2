@@ -32,6 +32,7 @@
     position: relative;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Add cursor pointer */
   }
 
   .gallery-item img {
@@ -48,6 +49,10 @@
 
   .gallery-item:hover img {
     transform: scale(1.08); 
+  }
+
+  .fullscreen {
+    width: 100%;
   }
 
   @media (max-width: 768px) {
@@ -98,11 +103,23 @@
    <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=11" alt="Зураг 11">
   </div>
-
  <div class="gallery-item">
     <img src="https://source.unsplash.com/random/800x800?image=12" alt="Зураг 12">
   </div>
-
 </div>
+<div class="gallery-item fullscreen">
+  <img src="https://source.unsplash.com/random/800x800?image=13" alt="Fullscreen Зураг">
+</div>
+
+<script>
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const imageSrc = item.querySelector('img').src;
+      document.querySelector('.fullscreen img').src = imageSrc;
+    });
+  });
+</script>
+
 </body>
 </html>
